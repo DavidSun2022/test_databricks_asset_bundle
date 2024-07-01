@@ -64,4 +64,4 @@ jobs:
         working-directory: ./david_dab
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-          DATABRICKS_BUNDLE_ENV: prod      
+          # DATABRICKS_BUNDLE_ENV: prod      

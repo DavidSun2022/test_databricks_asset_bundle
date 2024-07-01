@@ -58,9 +58,10 @@ jobs:
         working-directory: ./david_dab
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-          DATABRICKS_BUNDLE_ENV: prod               
-      # - run: databricks bundle destroy -t prod --auto-approve
-      #   working-directory: ./david_dab
-      #   env:
-      #     DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-      #     DATABRICKS_BUNDLE_ENV: prod      
+          DATABRICKS_BUNDLE_ENV: prod      
+
+      - run: databricks bundle destroy --auto-approve
+        working-directory: ./david_dab
+        env:
+          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+          DATABRICKS_BUNDLE_ENV: prod      

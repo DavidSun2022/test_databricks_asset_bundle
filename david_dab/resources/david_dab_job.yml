@@ -18,6 +18,8 @@ resources:
           job_cluster_key: job_cluster
           notebook_task:
             notebook_path: ../src/notebook.ipynb
+            base_parameters:
+              rangeNo: 5
         
       job_clusters:
         - job_cluster_key: job_cluster

@@ -60,20 +60,20 @@ jobs:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
           # DATABRICKS_BUNDLE_ENV: prod 
 
-      - run: databricks bundle destroy -t qa --auto-approve
-        working-directory: ./david_dab
-        env:
-          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-          # DATABRICKS_BUNDLE_ENV: qa      
+      # - run: databricks bundle destroy -t qa --auto-approve
+      #   working-directory: ./david_dab
+      #   env:
+      #     DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+      #     # DATABRICKS_BUNDLE_ENV: qa      
 
-      - run: databricks bundle destroy -t pre-prod --auto-approve
-        working-directory: ./david_dab
-        env:
-          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-          # DATABRICKS_BUNDLE_ENV: pre-prod 
+      # - run: databricks bundle destroy -t pre-prod --auto-approve
+      #   working-directory: ./david_dab
+      #   env:
+      #     DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+      #     # DATABRICKS_BUNDLE_ENV: pre-prod 
 
-      - run: databricks bundle destroy -t prod --auto-approve
-        working-directory: ./david_dab
-        env:
-          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
-          # DATABRICKS_BUNDLE_ENV: prod    
+      # - run: databricks bundle destroy -t prod --auto-approve
+      #   working-directory: ./david_dab
+      #   env:
+      #     DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+      #     # DATABRICKS_BUNDLE_ENV: prod    
